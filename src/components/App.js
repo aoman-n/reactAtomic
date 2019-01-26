@@ -10,5 +10,5 @@ export default () => {
         <p>hello world</p>
       </Switch>
     </div>
-  )
-}
+  );
+};
