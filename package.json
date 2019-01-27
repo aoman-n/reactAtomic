@@ -10,7 +10,8 @@
     "dev": "webpack-dev-server --open --mode=development",
     "build": "webpack --mode=production",
     "watch": "webpack --mode=production --watch",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o .out"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
