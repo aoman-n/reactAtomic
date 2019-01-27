@@ -1,7 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import Button from '.';
 
 storiesOf('Button', module)
-  .add('with text', () => <Button>予約する</Button>)
-  .add('primary', () => <Button primary>予約する</Button>);
+  .addDecorator(withKnobs)
+  .add('default', () => (
+    <Button disabled={boolean('Disabled', false)}>
+      {text('Label', '予約はこちら')}
+    </Button>
+  ));
