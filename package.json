@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run dev",
-    "dev": "webpack-dev-server --open --mode=development",
+    "dev": "webpack-dev-server --hot --open --mode=development",
     "build": "webpack --mode=production",
     "watch": "webpack --mode=production --watch",
     "storybook": "start-storybook -p 9001 -c .storybook",

@@ -3,10 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
   context: path.join(__dirname, '/src'),
-  entry: ['@babel/polyfill', path.join(__dirname, '/src')],
+  entry: [
+    '@babel/polyfill',
+    'react-hot-loader/patch',
+    path.join(__dirname, '/src'),
+  ],
   output: {
     path: path.join(__dirname, '/public'),
     filename: './js/bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
