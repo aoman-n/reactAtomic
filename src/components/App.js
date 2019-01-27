@@ -1,16 +1,14 @@
 import React from 'react';
-import { Switch } from 'react-router-dom';
 import GlobalStyle from '../styles/GlobalStyle';
 import Button from './atoms/Button';
+import InputText from './atoms/InputText';
 
 export default () => {
   return (
     <div>
       <GlobalStyle />
-      <Button text="予約する" />
-      <Switch>
-        <p>hello world</p>
-      </Switch>
+      <Button>予約する</Button>
+      <InputText placeholder="名前" />
     </div>
   );
 };

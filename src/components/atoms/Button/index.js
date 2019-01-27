@@ -12,12 +12,8 @@ const Container = styled.button`
   cursor: pointer;
 `;
 
-const Button = ({ text, ...props }) => {
-  return <Container {...props}>{text}</Container>;
-};
-
-Button.propTypes = {
-  text: PropTypes.string.isRequired,
+const Button = ({ children, ...props }) => {
+  return <Container {...props}>{children}</Container>;
 };
 
 export default Button;
