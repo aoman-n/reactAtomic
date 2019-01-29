@@ -1,36 +1,39 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { colors } from '../../../styles';
 
-const Input = styled.input`
+const styles = css`
   width: 335px;
   height: 34px;
   font-size: 12px;
+  font-weight: bold;
   color: ${colors.white};
   background: #cab800;
   box-shadow: inset 0 1px 3px 0 rgba(114, 104, 0, 0.23);
   box-sizing: border-box;
   padding: 11px 10px;
   ::placeholder {
-    color: ${colors.white};
+    color: rgba(255, 255, 255, 0.64);
   }
 `;
 
-const InputText = ({ placeholder }) => {
-  const [text, setText] = useState('');
-  return (
-    <Input
-      type="text"
-      placeholder={placeholder}
-      value={text}
-      onChange={e => setText(e.target.value)}
-    />
-  );
+const TextInput = styled.input`
+  ${styles}
+`;
+
+const Input = ({ ...props }) => {
+  return <TextInput type="text" {...props} />;
 };
 
-InputText.propTypes = {
-  placeholder: PropTypes.string.isRequired,
+Input.propTypes = {
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
 };
 
-export default InputText;
+Input.defaultProps = {
+  type: 'text',
+  placeholder: '名前',
+};
+
+export default Input;
