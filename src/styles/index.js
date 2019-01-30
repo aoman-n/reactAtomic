@@ -6,6 +6,11 @@ export const colors = {
   white: '#ffffff',
 };
 
-export const fontSize = {};
+export const fontSize = {
+  tiny: 12,
+  small: 14,
+  medium: 16,
+  large: 20,
+};
 
 export const spacing = {};
