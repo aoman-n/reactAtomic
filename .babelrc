@@ -4,6 +4,14 @@
     "@babel/preset-react",
   ],
   "plugins": [
-    "react-hot-loader/babel"
+    ["module-resolver", {
+      "root": ["./src/"],
+      "alias": {
+        "components": "./src/components",
+        "images": "./src/images",
+        "styles": "./src/styles",
+      }
+    }],
+    "react-hot-loader/babel",
   ]
 }

@@ -31,9 +31,9 @@ const config = {
             loader: 'url-loader',
             options: {
               limit: 51200,
-              name: '[name].[ext]',
-              outputPath: 'images/',
-              publicPath: path => `./${path}`,
+              // name: '[name].[ext]',
+              // outputPath: 'images/',
+              // publicPath: path => `./${path}`,
             },
           },
         ],
