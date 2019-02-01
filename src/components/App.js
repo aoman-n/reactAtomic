@@ -8,7 +8,7 @@ export default () => {
   return (
     <div>
       <GlobalStyle />
-      <MainVisual height="2000" />
+      <MainVisual height="460" />
       <Button>予約する</Button>
       <InputText placeholder="名前" />
     </div>
