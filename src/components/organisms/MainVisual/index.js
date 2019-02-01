@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from 'components/atoms/Button';
+import LogoImage from 'components/atoms/LogoImage';
 import mainImage from './mainvisual.jpg';
-import Button from '../../atoms/Button';
-import LogoImage from '../../atoms/LogoImage';
 
 const Wrapper = styled.div`
   height: 460px;

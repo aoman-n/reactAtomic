@@ -13,6 +13,13 @@ const config = {
     filename: './js/bundle.js',
     publicPath: '/',
   },
+  resolve: {
+    alias: {
+      components: path.join(__dirname, 'src/components'),
+      image: path.join(__dirname, 'src/images'),
+      styles: path.join(__dirname, 'src/styles'),
+    },
+  },
   module: {
     rules: [
       {
