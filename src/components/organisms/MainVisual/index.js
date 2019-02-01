@@ -5,7 +5,7 @@ import LogoImage from 'components/atoms/LogoImage';
 import mainImage from './mainvisual.jpg';
 
 const Wrapper = styled.div`
-  height: 460px;
+  height: ${props => props.height}px;
   background: url(${mainImage}) no-repeat;
   background-size: cover;
   background-position-y: center;

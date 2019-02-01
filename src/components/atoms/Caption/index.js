@@ -7,8 +7,11 @@ import { fontSize, colors } from '../../../styles/index';
 const Wrapper = styled(Link)`
   text-decoration: none;
   color: ${colors.black};
-  font-size: ${fontSize.tiny};
+  font-size: ${fontSize.tiny}px;
   font-weight: bold;
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 const Caption = ({ label, to }) => <Wrapper to={to}>{label}</Wrapper>;
