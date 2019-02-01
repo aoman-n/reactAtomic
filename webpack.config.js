@@ -16,7 +16,7 @@ const config = {
   resolve: {
     alias: {
       components: path.join(__dirname, 'src/components'),
-      image: path.join(__dirname, 'src/images'),
+      images: path.join(__dirname, 'src/images'),
       styles: path.join(__dirname, 'src/styles'),
     },
   },
