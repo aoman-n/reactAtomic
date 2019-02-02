@@ -16,20 +16,20 @@ const getSize = height => {
 
 const StyledIcon = styled.div`
   display: inline-block;
-  background-image: url(${props => props.icon});
+  background-image: url(${props => props.src});
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  ${props => getSize(props.isHeight)}
+  ${props => getSize(props.wide)}
   ${props =>
-    props.isBorder &&
+    props.withBorder &&
     css`
       border: 3px solid white;
     `}
 `;
 
-const CircleIcon = ({ icon, isBorder, isHeight }) => (
-  <StyledIcon {...{ icon, isBorder, isHeight }} />
+const CircleIcon = ({ src, withBorder, wide }) => (
+  <StyledIcon {...{ src, withBorder, wide }} />
 );
 
 export default CircleIcon;

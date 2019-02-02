@@ -25,6 +25,7 @@ const fontColors = {
 };
 
 const Text = styled.h2`
+  font-weight: 700;
   ${props => getFontSize(props.type)}
   color: ${props => fontColors[props.pallete]};
 `;
