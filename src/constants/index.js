@@ -1,6 +1,8 @@
 import foodImg from 'images/food.jpg';
 import desertImg from 'images/desert.jpeg';
 import drinkImg from 'images/drink.jpg';
+import berry from 'images/blog_berry.jpg';
+import carrot from 'images/blog_carrot.jpeg';
 
 export const menuData = [
   {
@@ -21,7 +23,24 @@ export const menuData = [
   },
 ];
 
-export const blogData = [{ title: 'test', date: '2019/01/20' }];
+export const blogData = [
+  {
+    title: '昨年好評だったベリーサラダが今年もはじまりました',
+    date: '2018/12/25',
+    content:
+      '本日より季節のサラダが昨年好評だったベリーサラダになりました。ブルーベリー、木苺などのあまずっぱい…',
+    src: berry,
+    link: '#',
+  },
+  {
+    title: 'とれたて京都産にんじんを使ったスムージーを店頭販売開始！',
+    date: '2019/02/25',
+    content:
+      'その日に採れた人参をその日のうちにスムージーにして新鮮な状態でお客様に提供します。今回はオレンジも加えてよりい…',
+    src: carrot,
+    link: '#',
+  },
+];
 
 export const eventData = [
   {

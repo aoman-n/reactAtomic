@@ -4,8 +4,8 @@ import styled, { css } from 'styled-components';
 const getSize = height => {
   if (height) {
     return `
-      height: 230px;
-      width: 230px;
+      height: 152px;
+      width: 152px;
     `;
   }
   return `
