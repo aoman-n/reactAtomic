@@ -20,7 +20,7 @@ const Li = styled.li`
 const NavLinks = ({ items }) => (
   <Wrapper>
     {items.map(item => (
-      <Li>
+      <Li key={item.label}>
         <Caption key={item.label} {...item} />
       </Li>
     ))}

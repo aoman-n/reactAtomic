@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import SubLogoImage from 'components/atoms/SubLogoImage';
 import NavLinks from 'components/molecules/NavLinks';
-import { colors } from 'styles';
 
 const Wrapper = styled.div`
   display: inline-flex;

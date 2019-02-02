@@ -14,7 +14,6 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
-
 const Logo = styled.div`
   padding-bottom: 30px;
 `;
