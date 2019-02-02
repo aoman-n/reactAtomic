@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   border: 1px solid #ffffff;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.48);
   position: relative;
+  overflow: hidden;
 `;
 const TagFrame = styled.div`
   display: inline-block;
@@ -21,7 +22,6 @@ const TagFrame = styled.div`
   position: absolute;
   top: 3%;
   left: -42%;
-  overflow: hidden;
 `;
 const Title = styled.div`
   padding-bottom: 20px;
