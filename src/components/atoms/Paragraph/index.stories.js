@@ -25,6 +25,8 @@ storiesOf('Paragraph', module)
   ))
   .add('menu description', () => (
     <MenuFrame>
-      <Paragraph height="21">{menuText}</Paragraph>
+      <Paragraph height="21" left>
+        {menuText}
+      </Paragraph>
     </MenuFrame>
   ));

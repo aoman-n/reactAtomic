@@ -13,6 +13,8 @@ const getFontSize = type => {
       return `font-size: ${fontSize.medium}px;`;
     case 'menu':
       return `font-size: ${fontSize.xlarge}px;`;
+    case 'date':
+      return `font-size: ${fontSize.xSmall}px;`;
     default:
       return `font-size: ${fontSize.large}px;`;
   }
@@ -23,7 +25,6 @@ const fontColors = {
 };
 
 const Text = styled.h2`
-  display: inline-block;
   ${props => getFontSize(props.type)}
   color: ${props => fontColors[props.pallete]};
 `;
@@ -33,7 +34,7 @@ const Heading = ({ type, pallete, children }) => (
 );
 
 Heading.propTypes = {
-  type: PropTypes.oneOf(['section', 'blog', 'event', 'menu']),
+  type: PropTypes.oneOf(['section', 'blog', 'event', 'menu', 'date']),
   pallete: PropTypes.oneOf(['black', 'white']),
   children: PropTypes.node,
 };

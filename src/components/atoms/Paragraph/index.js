@@ -10,8 +10,9 @@ const fontColors = {
 
 const Text = styled.p`
   display: inline-block;
-  text-align: center;
-  font-size: ${props => (props.size === 'small' ? 12 : 14)}px;
+  text-align: ${props => (props.left ? 'start' : 'center')};
+  font-size: ${props =>
+    props.size === 'small' ? fontSize.xSmall : fontSize.small}px;
   line-height: ${props => props.height || 18}px;
   color: ${props => fontColors[props.pallete]};
 `;
@@ -25,6 +26,7 @@ Paragraph.propTypes = {
   height: PropTypes.number,
   size: PropTypes.string,
   pallete: PropTypes.string,
+  left: PropTypes.string,
 };
 
 Paragraph.defaultProps = {
