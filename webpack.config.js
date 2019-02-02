@@ -18,6 +18,7 @@ const config = {
       components: path.join(__dirname, 'src/components'),
       images: path.join(__dirname, 'src/images'),
       styles: path.join(__dirname, 'src/styles'),
+      constants: path.join(__dirname, 'src/constants'),
     },
   },
   module: {
