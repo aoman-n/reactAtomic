@@ -30,9 +30,16 @@ const Text = styled.h2`
   color: ${props => fontColors[props.pallete]};
 `;
 
-const Heading = ({ type, pallete, children }) => (
-  <Text {...{ type, pallete }}>{children}</Text>
-);
+const Heading = ({ type, pallete, children }) => {
+  if (type === 'date') {
+    return (
+      <Text as="h3" {...{ type, pallete }}>
+        {children}
+      </Text>
+    );
+  }
+  return <Text {...{ type, pallete }}>{children}</Text>;
+};
 
 Heading.propTypes = {
   type: PropTypes.oneOf(['section', 'blog', 'event', 'menu', 'date']),
