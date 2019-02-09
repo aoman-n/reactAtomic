@@ -25,6 +25,21 @@
     "react/prop-types": 0,
     "no-shadow": 0,
     "no-alert": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "global-require": 0,
+    "import/no-dynamic-require": 0,
+    "react/require-default-props": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "root": ["./src/"],
+        "alias": {
+          "components": "./src/components",
+          "images": "./src/images",
+          "styles": "./src/styles"
+        }
+      }
+    }
   }
 }
